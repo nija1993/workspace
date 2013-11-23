@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.newapplication"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.newapplication.Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.newapplication.Example"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.newapplication.EXAMPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.newapplication.MyMenu" >
+            <intent-filter>
+                <action android:name="com.example.newapplication.MENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.newapplication.Prefs"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.newapplication.PREFS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.newapplication.Text"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.newapplication.SimpleBrowser"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.newapplication.Email"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.newapplication.Tabs"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.newapplication.Camera"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.newapplication.Data"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.newapplication.Flipper"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.newapplication.GFX"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.newapplication.Sound"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.newapplication.SharedPrefs"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.newapplication.FileStream"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.newapplication.GFXSurface"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.newapplication.OpenedClass"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.newapplication.Slider"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.newapplication.AboutUs"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog" >
+           <intent-filter>
+                <action android:name="com.example.newapplication.ABOUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
